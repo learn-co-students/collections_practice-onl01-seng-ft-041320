@@ -39,13 +39,12 @@ def sum_array(array)
 end 
 
 def add_s(array)
-  array.collect do |word|
-    if word=word[2]
+ array.collect do |word|
+    if word==array[1]
       word
-    else
-      word = "#{word}s"
-    end
-    array << word
-  end 
-  array
-end 
+  else
+    word = "#{word}s"
+    word
+  end
+end
+end
