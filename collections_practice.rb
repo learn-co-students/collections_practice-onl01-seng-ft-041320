@@ -73,7 +73,7 @@ end
 
 def add_s(array)
   array.each_with_index do |a,i|
-    if(array[1]=="feet")
+    if(array[a]=="feet")
        array.push("s")
     end
     #array
