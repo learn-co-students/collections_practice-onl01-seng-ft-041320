@@ -30,18 +30,31 @@ def kesha_maker(array)
   counter = 0
   new_array = []
   array.each do
-    new_array << array[counter][1] + array[counter][2] + "$" + array[counter][4..-1]
-    new_array
+    new_array[counter] = "#{array[counter][0..1]}$#{array[counter][3..-1]}"
+    counter += 1
   end
+  new_array
 end
 
 def find_a(array)
 #that returns all the strings in the array passed to it that start_with? (hint) the letter "a". You'll want to use a high level iterator for this that finds, selects, or detects elements based on a condition.
+  counter = 0
+  return_array =[]
+  array.map do
+    return_array << array[counter] if array[counter].start_with?('a')   
+    counter += 1
+  end
+  return_array
 end
 
 def sum_array(array)
-  #that adds together all of the integers in the array and returns their sum.
+#that adds together all of the integers in the array and returns their sum.
+# sum = 0
+# array.each { |a| sum+=a }
+# sum
 # Advanced: Try using the .inject method here.
+# [5, 6, 7, 8].inject (0) { |result_memo, object| result_memo + object }
+  array.inject (0) { |result_memo, object| result_memo + object }
 end
 
 def add_s(array)
