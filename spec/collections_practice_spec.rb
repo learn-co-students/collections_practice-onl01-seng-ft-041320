@@ -36,7 +36,7 @@ describe 'collections practice' do
       expect(reverse_array([12, 4, 35])).to eq([35, 4, 12])
     end
   end
-
+  #
   # Question 6
   describe '#kesha_maker' do
     # DO NOT USE .collect or .map. use .each to build a new array, like in the "my_each" lab!
@@ -51,7 +51,7 @@ describe 'collections practice' do
       expect(find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ])).to eq(["apple", "avis", "arlo", "ascot"])
     end
   end
-
+  #
   # Question 8
   describe '#sum_array' do
     #for a bonus, look up the `.inject` method to get this test passing
